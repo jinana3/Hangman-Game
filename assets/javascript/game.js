@@ -35,6 +35,7 @@ for(var i=0; i<blankWord.length;i++){
 };
 var lettersGuessed = [];
 var wrongCount = 6;
+var hangmanCount = 0;
 //-------------------------------------//
 function printToHTML() { //function that overwrites #currentWord and #guessesRemaining - could do this in a better way
     $("#currentWord").html("Current Word: ");//overwrite what's in the html
@@ -106,7 +107,9 @@ document.onkeyup = function keyPress(event){
       console.log(blankWord);
     }
     else{//wrong guess, do nothing except subtract
+      hangmanCount = hangmanCount + 1;
       wrongCount = wrongCount-1;
+      $("#hangmanPhotos").attr("src", "http://www.writteninpencil.de/Projekte/Hangman/hangman" + hangmanCount + ".png")
       console.log("it's wrong");
     }
     printToHTML();//update word and check on wrongCount
@@ -124,6 +127,7 @@ document.onkeyup = function keyPress(event){
       };
       lettersGuessed = [];
       $("#lettersGuessed").html("Letters already Guessed: ")//reset HTML on this one
+      hangmanCount = 0;
       wrongCount = 6;
       printToHTML();
       $("#guessPhotos").attr("src", "assets/images/" + arrayToString(currentWord) + ".jpg");
