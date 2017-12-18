@@ -75,7 +75,7 @@ function arrayToString(array){//if we want to print the array of letters as a st
 };
 function init() {
   printToHTML();
-  $("#guessPhotos").attr("src", "assets/images/" + arrayToString(currentWord) + ".JPG");
+  $("#guessPhotos").attr("src", "assets/images/" + arrayToString(currentWord) + ".jpg");
 };
 window.onload = init;//not sure why we need this, will figure it out later -> need to think of way to start game
 //-------------------------------------//
