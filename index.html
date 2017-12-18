@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman Game</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  </head>
+  <body>
+	<div class = "container">
+
+		<div class = "row">
+			<div class = "col-md-offset-2 col-md-8">
+	    		<h1>Hangman Game: Places I Love</h1>
+	    	</div>
+	   	</div>
+
+		<div id="musicWrapper" class = "row">
+			<div class = "col-md-offset-1 col-md-6">
+				<audio controls autoplay="false">
+						<source src="assets/music/01 - Falling Autumn.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class = "col-md-offset-1 col-md-2">
+				<input id = "newGame" name="refresh" type="button" value="New Game" onClick="location.reload()">
+
+			</div>
+		</div>
+
+		<!-- Nick taught me to use div within div to wrap the game in it -->
+		<div class = "row">
+			<div class = "col-md-offset-1 col-md-10">
+			    <div id="gameWrapper"> 
+			      <div id="gameTop">
+			        <h2>Press keys to guess the place of the photo</h2>
+			        <h3 id="userWins">Wins: </h3>
+			        <h3 id="currentWord">Current Word: </h3>
+			      </div>
+			      <div id="gameBtm">
+			        <h3 id="guessesRemaining">Number of Guesses Remaining: </h3>
+			      </div>
+			    </div>
+			</div>
+		</div>
+		
+		<div class = "row">
+			
+			<div class = "col-md-2" id = "hangman">
+				<img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangmanPhotos">
+			    <div id="lettersGuessed"><h4>Letters already Guessed: </h4>
+			    </div>
+			</div>
+			<div class = "col-md-8" id = "pictures">
+				<img src="assets/images/background.jpg" id="guessPhotos">
+			</div>
+			<div class = "col-md-2">
+			</div>
+		</div>
+
+	</div>
+
+  </body>
+</html>

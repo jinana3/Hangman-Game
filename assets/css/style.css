@@ -1,0 +1,87 @@
+body{
+  background-color: #eee;
+  /*background: url('http://www.writteninpencil.de/Projekte/Hangman/hangman-bg.png') fixed;*/
+  /*background-image: url(../images/background2.jpg), url(../images/background.jpg);*/
+  /*background-repeat: no-repeat, repeat;*/
+  /*background-image: linear-gradient(pink, grey); */
+  background-image: url(../images/background2.jpg);
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  font-family: 'Itim', cursive;
+  text-align: center;
+
+}
+h1{
+  font-size: 24px;
+  text-align: center;
+  padding: 20px 0;
+}
+#musicWrapper{
+  width: 560px;
+  margin: 0 auto;
+  padding: 0px;
+}
+#newGame{
+  width: 100px;
+  margin: 0 auto;
+  padding: 5px;
+}
+#gameWrapper{
+ width: 560px;
+ background-color: #FFF;
+ margin: 0 auto;
+ padding: 20px;
+ border-radius: 15px;
+ box-shadow: 2px 2px 2px #666;
+}
+#gameTop{
+}
+h2{
+  font-size: 22px;
+  margin-bottom:20px;
+  line-height: 10px;
+}
+h3{
+  font-size:16px;
+  line-height: 10px;
+}
+h3#userWins{
+  color: blue;
+}
+h3#currentWord{
+  color: blue;
+}
+#gameBtm{
+}
+h3#guessesRemaining{
+  color: black;
+}
+
+#pictures{
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#hangman{
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+/*  background-repeat: no-repeat;*/
+}
+
+img#guessPhotos {
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #777;
+}
+
+img#hangmanPhotos{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #777;
+}
+
+/*note if I use bootstrap, i can use container. otherwise, I dont need container, and should use own style.css*/
